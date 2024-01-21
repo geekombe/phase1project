@@ -1,3 +1,13 @@
+
+reset.addEventListener('click', () =>{
+    fetch("http://localhost:3000/transactions")
+    .then(response => response.json())
+    .then(data => {
+        data.transactions = data.transactions.slice(0, 1);
+    });
+});
+
+
 const updateTotals = (transactions) => {
     let totalEarnings = 0;
     let totalSpendings = 0;
