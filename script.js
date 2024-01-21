@@ -8,6 +8,14 @@ reset.addEventListener('click', () =>{
 });
 
 
+fetch("http://localhost:3000/transactions")
+.then(response => response.json())
+.then(data => {
+    updateTotals(data);
+});
+
+
+
 const updateTotals = (transactions) => {
     let totalEarnings = 0;
     let totalSpendings = 0;
@@ -50,19 +58,9 @@ fetch("http://localhost:3000/transactions")
     console.error(err);
 });
 
-// Rest of your existing code...
-
-// Add this inside your form's submit event listener, after successfully adding a transaction
-fetch("http://localhost:3000/transactions")
-.then(response => response.json())
-.then(data => {
-    updateTotals(data); // Update totals after adding new transaction
-});
-
 
 
 let form = document.getElementById("addTransaction")
-
 form.addEventListener("submit", (event)=>{
     event.preventDefault();
 

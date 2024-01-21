@@ -2,9 +2,9 @@
   "transactions": [
     {
       "id": 1,
-      "amount": "",
-      "type": "",
-      "description": ""
+      "amount": "20",
+      "type": "earning",
+      "description": "voucher"
     },
     {
       "id": 2,
