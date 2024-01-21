@@ -1,0 +1,28 @@
+{
+    "transactions": [
+      {
+        "id": 1,
+        "amount": 1000,
+        "type": "earning",
+        "description": "Unnecessary"
+      },
+      {
+        "id": 2,
+        "amount": "300",
+        "type": "spending",
+        "description": "Rent"
+      },
+      {
+        "id": 3,
+        "amount": "100",
+        "type": "spending",
+        "description": "Shopping"
+      },
+      {
+        "id": 4,
+        "amount": "1000",
+        "type": "earning",
+        "description": ""
+      }
+    ]
+  }
