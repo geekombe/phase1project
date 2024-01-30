@@ -5,6 +5,7 @@ reset.addEventListener('click', () =>{
     .then(data => {
         data.transactions = data.transactions.slice(0, 1);
     });
+
 });
 
 
@@ -38,11 +39,16 @@ fetch("http://localhost:3000/transactions")
 .then(response => response.json())
 .then(data => {
     datasourceLength = data.length;
-    updateTotals(data); // Calculate and update totals
+    updateTotals(data);
 
     let logs = document.getElementById("tHistory");
-    logs.innerHTML = ''; // Clear existing logs
+    logs.innerHTML = '';
     for (let i = 0; i < data.length; i++) {
+
+    
+
+
+
         let htmldata = `
             <p>Type: <b>${data[i].type}</b> </p>
             <ul>

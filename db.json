@@ -2,27 +2,15 @@
   "transactions": [
     {
       "id": 1,
-      "amount": "20",
-      "type": "earning",
-      "description": "voucher"
+      "amount": "10",
+      "type": "spending",
+      "description": "Rent"
     },
     {
       "id": 2,
       "amount": "1000",
       "type": "earning",
       "description": "Gig 1"
-    },
-    {
-      "id": 3,
-      "amount": "500",
-      "type": "spending",
-      "description": "Rent"
-    },
-    {
-      "id": 4,
-      "amount": "50",
-      "type": "earning",
-      "description": "Loan"
     }
   ]
 }
